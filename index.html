@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #todo-form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        #todo-input {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #add-btn {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            border: none;
+        }
+        #todo-list {
+            max-width: 600px;
+            margin: 0 auto;
+            list-style-type: none;
+            padding: 0;
+        }
+        .todo-item {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .remove-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .delete-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <div id="todo-form">
+        <input type="text" id="todo-input" placeholder="Add a new task...">
+        <button id="add-btn">Add</button>
+    </div>
+    <ul id="todo-list"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
